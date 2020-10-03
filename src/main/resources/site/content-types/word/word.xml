@@ -1,0 +1,125 @@
+<content-type>
+  <display-name>Word</display-name>
+  <super-type>base:structured</super-type>
+  <is-abstract>false</is-abstract>
+  <is-final>true</is-final>
+  <is-built-in>false</is-built-in>
+  <allow-child-content>true</allow-child-content>
+  <form>
+
+    <item-set name="singularItemSet">
+      <label>Singular</label>
+      <occurrences minimum="1" maximum="1"/>
+      <items>
+        <input name="masculin" type="TextLine">
+          <label>Masculin</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="feminine" type="TextLine">
+          <label>Feminine</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="neuter" type="TextLine">
+          <label>Neuter</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="indefinite" type="TextLine">
+          <label>Indefinite</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="indefiniteGenitive" type="TextLine">
+          <label>Indefinite Genitive</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="particular" type="TextLine">
+          <label>Particular</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="particularGenitive" type="TextLine">
+          <label>Particular Genitive</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+      </items>
+    </item-set>
+
+    <item-set name="pluralItemSet">
+      <label>Plural</label>
+      <occurrences minimum="0" maximum="1"/>
+      <items>
+        <input name="plural" type="TextLine">
+          <label>Plural</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="indefinite" type="TextLine">
+          <label>Indefinite</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="indefiniteGenitive" type="TextLine">
+          <label>Indefinite Genitive</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="particular" type="TextLine">
+          <label>Particular</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="particularGenitive" type="TextLine">
+          <label>Particular Genitive</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+      </items>
+    </item-set>
+
+    <field-set>
+      <label>Inductiv</label>
+      <items>
+        <input name="character" type="CheckBox">
+          <label>Character</label>
+          <default>unchecked</default>
+        </input>
+        <input name="god" type="CheckBox">
+          <label>God</label>
+          <default>unchecked</default>
+        </input>
+        <input name="linkingWord" type="CheckBox">
+          <label>Linking Word</label>
+          <default>unchecked</default>
+        </input>
+        <input name="person" type="CheckBox">
+          <label>Person</label>
+          <default>unchecked</default>
+        </input>
+      </items>
+    </field-set>
+
+    <field-set>
+      <label>Type</label>
+      <items>
+        <input name="adverb" type="CheckBox">
+          <label>Adverb</label>
+          <default>unchecked</default>
+        </input>
+        <input name="noun" type="CheckBox">
+          <label>Noun</label>
+          <default>unchecked</default>
+        </input>
+        <input name="preposition" type="CheckBox">
+          <label>Preposition</label>
+          <default>unchecked</default>
+        </input>
+        <input name="pronoun" type="CheckBox">
+          <label>Pronoun</label>
+          <default>unchecked</default>
+        </input>
+        <input name="punctuation" type="CheckBox">
+          <label>Punctuation</label>
+          <default>unchecked</default>
+        </input>
+        <input name="verb" type="CheckBox">
+          <label>Verb</label>
+          <default>unchecked</default>
+        </input>
+      </items>
+    </field-set>
+
+  </form>
+</content-type>

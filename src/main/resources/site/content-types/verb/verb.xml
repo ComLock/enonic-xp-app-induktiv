@@ -1,0 +1,68 @@
+<content-type>
+  <display-name>Verb</display-name>
+  <super-type>base:structured</super-type>
+  <is-abstract>false</is-abstract>
+  <is-final>true</is-final>
+  <is-built-in>false</is-built-in>
+  <allow-child-content>true</allow-child-content>
+  <form>
+    <input name="infinitive" type="TextLine">
+      <label>Infinitive</label>
+    </input>
+    <input name="present" type="TextLine">
+      <label>Present</label>
+    </input>
+    <input name="preteritum" type="TextLine">
+      <label>Preteritum</label>
+      <occurrences minimum="0" maximum="0"/>
+    </input>
+    <input name="presentPerfectTense" type="TextLine">
+      <label>Present perfect tense</label>
+      <occurrences minimum="0" maximum="0"/>
+    </input>
+    <input name="imperative" type="TextLine">
+      <label>Imperative</label>
+    </input>
+
+    <item-set name="perfectParticipleItemSet">
+      <label>Perfect participle</label>
+      <occurrences minimum="1" maximum="1"/>
+      <items>
+        <input name="masculin" type="TextLine">
+          <label>Masculin</label>
+          <occurrences minimum="0" maximum="0"/>
+        </input>
+        <input name="feminine" type="TextLine">
+          <label>Feminine</label>
+          <occurrences minimum="0" maximum="0"/>
+        </input>
+        <input name="neuter" type="TextLine">
+          <label>Neuter</label>
+          <occurrences minimum="0" maximum="0"/>
+        </input>
+        <input name="particular" type="TextLine">
+          <label>Particular</label>
+          <occurrences minimum="0" maximum="0"/>
+        </input>
+        <input name="plural" type="TextLine">
+          <label>Plural</label>
+          <occurrences minimum="0" maximum="0"/>
+        </input>
+      </items>
+    </item-set>
+
+    <input name="presentParticiple" type="TextLine">
+      <label>Present Participle</label>
+    </input>
+
+    <field-set>
+      <label>Type</label>
+      <items>
+        <input name="verb" type="CheckBox">
+          <label>Verb</label>
+          <default>checked</default>
+        </input>
+      </items>
+    </field-set>
+  </form>
+</content-type>

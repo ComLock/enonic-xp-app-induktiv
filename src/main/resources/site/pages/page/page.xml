@@ -1,0 +1,8 @@
+<page>
+  <display-name>Page</display-name>
+  <description></description>
+  <form/>
+  <regions>
+    <region name="main"/> 
+  </regions>
+</page>
